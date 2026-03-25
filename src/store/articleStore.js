@@ -6,7 +6,9 @@ export const useArticleStore = defineStore('article', {
         articles: [],
         loading: false,
         currentPage: 1,
-        lastPage: 1
+        lastPage: 1,
+        perPage: 10,
+        total: 0
     }),
     getters: {
         
@@ -19,6 +21,7 @@ export const useArticleStore = defineStore('article', {
             this.loading = false
             this.currentPage = rest.data.current_page
             this.lastPage = rest.data.last_page
+            this.total = rest.data.total
         },
         async deleteArticle (id) {
             await api.delete(`articles/${id}`)
