@@ -1,7 +1,7 @@
 <script setup>
-  import Article from './components/Article.vue';
+  import Home from './components/Home.vue';
 </script>
 
 <template>
-  <Article />
+  <Home />
 </template>
