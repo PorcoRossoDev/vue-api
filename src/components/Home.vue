@@ -6,7 +6,8 @@ import { ref } from 'vue'
   <div class="container mx-auto">
     <nav class="mt-3">
       <router-link to="/articles">Bài viết</router-link> |
-      <router-link to="/orders">Đơn hàng</router-link>
+      <router-link to="/orders">Đơn hàng</router-link> |
+      <router-link to="/login">Đăng nhập</router-link>
     </nav>
 
     <div class="mt-10">

@@ -4,6 +4,7 @@ import Article from '../components/Article.vue'
 import Order from '../components/Order.vue'
 import Home from '../components/Home.vue'
 import OrderOutput from '../components/order/OrderOutput.vue'
+import Login from '../components/Login.vue'
 
 const routes  = [
     {
@@ -25,6 +26,11 @@ const routes  = [
         path: '/orders/output',
         name: 'orders.output',
         component: OrderOutput
+    },
+    {
+        path: '/login',
+        name: 'login',
+        component: Login
     }
 ]
 
